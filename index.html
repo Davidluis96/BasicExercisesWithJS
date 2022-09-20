@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Condicionales</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8678;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8680;</button>
+          <ul data-slides>
+            <!-- Inicio Ejercicio 1-->
+            <li class="slide" data-active>
+                <div class="ejercicios">
+                    <h2>Ejercicio 1</h2>
+                    <div class="enunciado">
+                        <p> Un número primo es una cantidad entera positiva únicamente divisible por uno o por sí mismo. </p> 
+                        <p> Calcular y tabular los n primeros números primos.</p>
+                    </div>
+                    <div id="contenedor-entrada-numero-primo">
+                        <span>Los primeros&nbsp;</span>
+                        <input id="input-numero-primo" class="input-predeterminado" type="number" autofocus> 
+                        <span>&nbsp;números primos</span>                        
+                    </div>
+                    <div id="contenedor-boton-calcular">
+                        <button id="boton-calcular-primos" class="boton-calcular">Calcular</button>
+                    </div>
+                    <div id="contenedor-tabla-primos"></div>
+                </div>
+            </li>
+            <!-- Fin Ejercicio 1-->
+
+            <!-- Inicio Ejercicio 2-->
+            <li class="slide">
+                <div class="ejercicios">
+                    <h2>Ejercicio 2</h2>
+                    <div class="enunciado">
+                        <p>Escriba un programa que lea un valor entero positivo y determine:</p>    
+                        <p>a) Si el entero es un número primo.</p>
+                        <p>b) Si el entero es un número de <a href="#" title="Los números de Fibonacci forman una secuencia en la cual cada número es igual a la suma de los dos anteriores, siendo los dos primeros números iguales a 1">Fibonacci</a></p>
+                    </div>
+                    <div id="ejercicio1">
+                        <span>Ingresa un número entero positivo:&nbsp;</span>
+                        <input id="input-primo-fibonacci" class="input-predeterminado" type="number">                       
+                    </div>
+                    <div id="contenedor-boton-calcular-primo-fibonacci">
+                        <button id="boton-calcular-primo-fibonacci" class="boton-calcular" >Calcular</button>
+                    </div>
+                    <div id="mostrar-primo-fibonacci"></div>
+                </div>
+            </li>
+            <!-- Fin Ejercicio 2-->
+
+            <!-- Inicio Ejercicio 3-->
+            <li class="slide">
+                <div class="ejercicios">
+                    <h2>Ejercicio 3</h2>
+                    <div class="enunciado">
+                        <p>
+                            Un entrenador le ha propuesto a un atleta recorrer una ruta de cinco kilómetros durante 10 días, para determinar si es
+                            apto para la prueba de 5 Kilómetros o debe buscar otra especialidad. Para considerarlo apto debe cumplir por lo menos
+                            una de las siguientes condiciones:
+                        </p>
+                        <p> Que en ninguna de las pruebas haga un tiempo mayor a 16 minutos.</p>
+                        <p> Que al menos en una de las pruebas realice un tiempo mayor a 16 minutos.</p>
+                        <p> Que su promedio de tiempos sea menor o igual a 15 minutos.</p>
+                    </div>
+                    <div id="contenedor-tabla-tiempos-prueba"></div>
+                    <div id="contenedor-boton-agregar-tiempo">
+                        <button id="boton-agregar-tiempo" class="boton-calcular">Agregar Tiempo</button>
+                    </div>
+                    <div id="contenedor-boton-comprobar" >
+                        <button id="boton-comprobar-estado" class="boton-calcular">Comprobar Estado</button>
+                    </div>
+                    <div id="contenedor-resultado-prueba"></div>
+                </div>
+            </li>
+            <!-- Fin Ejercicio 3-->
+            <!-- Inicio Ejercicio 4-->
+            <li class="slide">
+                <div class="ejercicios">
+                    <h2>Ejercico 4</h2>
+                    <p>Obtener el promedio de calificaciones de un grupo de n alumnos</p>
+                    <div>
+                        <label for="input-cantidad-notas">Ingrese la Cantidad de Notas:&nbsp;</label>
+                        <input type="number" id="input-cantidad-notas" class="input-predeterminado">
+                        <div>
+                            <button id="boton-enviar-notas" class="boton-calcular">Enviar</button>
+                        </div> 
+                    </div>
+                    <div id="mostrar-celdas-notas"></div>
+                    <div id="contenedor-boton-calcular-promedio"></div>
+                    <div id="contenedor-resultado-promedio"></div>
+                </div>
+            </li>
+            <!-- Fin Ejercicio 4-->
+            <!-- Inicio Ejercicio 5-->
+            <li class="slide">
+                <div class="ejercicios">
+                    <div class="enunciado">
+                        <h2>Ejercicio 5</h2>
+                        <p>
+                            Se desea obtener el promedio de g grupos que están en un mismo año escolar; siendo que cada grupo puede tener n
+                            alumnos que cada alumno puede llevar m materias y que en todas las materias se promedian tres calificaciones para
+                            obtener el promedio de la materia. Lo que se desea desplegar es el promedio de los grupos, el promedio de cada grupo y
+                            el promedio de cada alumno.
+                        </p>
+                    </div>
+                    <div id="contenedor-cantidad-grupos">
+                        <label for="input-cantidad-grupos"><strong>N° Grupos:</strong></label>
+                        <input type="number" id="input-cantidad-grupos" class="input-predeterminado">
+                        <button id="boton-cantidad-grupos" class="boton-calcular">Enviar Grupos</button>
+                    </div>
+                    <div id="contenedor-alumnos-por-grupo"></div>
+                    <div id="contenedor-boton-cantidad-alumnos">
+                        <button id="boton-enviar-cantidad-alumnos" class="boton-calcular" hidden>Enviar Estudiantes</button>
+                    </div>
+                    <div id="contenedor-cantidad-materias"></div>
+                    <button id="boton-enviar-materias" class="boton-calcular" hidden>Enviar Materias</button>
+                    <div id="contenedor-notas-materias"></div>
+                    <button id="boton-enviar-notas-estudiantes" class="boton-calcular" hidden>Enviar Notas</button>
+                    <div id="mostrar-promedios-escuela"></div>
+                </div>
+            </li>
+            <!-- Fin Ejercicio 5-->
+            <!-- Inicio Ejercicio 6-->
+            <li class="slide">
+                <div class="ejercicios">
+                    <div class="enunciado">
+                        <h2>Ejercicio 6</h2>
+                        <p>
+                            Una persona que va de compras a la tienda “la rebaja”, decide llevar un control sobre lo que va comprando, para saber
+                            la cantidad de dinero que tendrá que pagar al llegar a la caja. La tienda tiene una promoción del 20% de descuento sobre
+                            aquellos artículos cuya etiqueta sea roja. Determinar la cantidad de dinero que esta persona deberá pagar.
+                        </p>
+                    </div>
+                    <h3>Tienda La Rebaja &#8482;</h3>
+                    <div id="contenedor-productos"></div>
+                    <div>
+                        <button id="boton-agregar-producto" class="boton-calcular">Agregar Producto</button>
+                        <button id="boton-total-pagar" class="boton-calcular">Total a Pagar</button>
+                    </div> 
+                    <div id="pago-total"></div>
+                </div>
+            </li>
+            <!-- Fin Ejercicio 6-->
+            <!-- Inicio Ejercicio 7-->
+            <li id="ejercicio7" class="slide">
+                <div class="ejercicios">
+                    <h2>Ejercicio 7</h2>
+                    <div class="enunciado">
+                        <p>Calcular la suma siguiente:</p>
+                        <p>100 + 98 + 96 + 94 + . . . + 0 en este orden</p>
+                    </div>
+                    <div>
+                        <button id="calcular-operacion-sumatoria" class="boton-calcular">Calcular</button>
+                    </div>
+                    <div id="myProgress" hidden>
+                        <div id="myBar"></div>
+                    </div>
+                    <div id="leyendaBarraProgreso">
+                        <div id="nodo-referencia"></div>
+                    </div>
+                    <div id="mostrar-operacion"></div>
+                </div>
+            </li>
+            <!-- Fin Ejercicio 7-->
+            <!-- Inicio Ejercicio 8-->
+            <li class="slide">
+                <div class="ejercicios">
+                    <div class="enunciado">
+                        <h2>Ejercicio 8</h2>
+                        <p>Suponga que tiene usted una tienda y desea registrar las ventas en su computadora. Diseñe un algoritmo que lea por cada cliente, el monto total de su compra. Al final del día que escriba la cantidad total de ventas y el número de clientes atendidos.</p>
+                    </div>
+                    <div id="contenedor-tabla-factura">
+                        <table id="contenido-tabla-clientes">
+                            <tbody id="cuerpo-tabla-clientes"></tbody>
+                        </table>
+                    </div>
+                    <button id="boton-agregar-cliente-tabla" class="boton-calcular">Agregar Cliente</button>
+                    <button id="boton-resumen-compra" class="boton-calcular">Generar Resumen</button>
+                    <div id="mostrar-resumen-compra"></div>
+                </div>
+            </li>
+            <!-- Fin Ejercicio 8-->
+            <!-- Inicio Ejercicio 9-->
+            <li class="slide">
+                <div class="ejercicios">
+                    <div class="enunciado">
+                        <h2>Ejercicio 9</h2>
+                        <p>
+                            Un jefe de casilla desea determinar cuántas personas de cada una de las secciones que componen su zona asisten el día
+                            de las votaciones. Las secciones son: norte, sur y centro. También desea determinar cuál es la sección con mayor
+                            número de votantes.
+                        </p>
+                    </div>
+                    <h3>Votaciones</h3>
+                    <div id="contenedor-registro-votaciones">
+                        <label for="input-seccion-votacion">Ingresa tu Sección</label>
+                        <input id="input-seccion-votacion" type="text" class="input-predeterminado">
+                        <div><span id="logo-informacion-seccion">&#8505;</span><span>&nbsp;<em>La sección puede ser: Norte, Centro o Sur</em></span></div>
+                    </div>
+                    <div>
+                        <button id="boton-enviar-seccion-votacion" class="boton-calcular">Enviar</button>
+                    </div>
+                    <div id="mostrar-resultado-votaciones"></div>
+                </div>
+            </li>
+             <!-- Fin Ejercicio 9-->
+             <!-- Inicial Ejercicio 10-->
+            <li class="slide">
+                <div class="ejercicios">
+                    <h2>Ejercicio 10</h2>
+                    <div class="enunciado">
+                        <p>Leer dos números y ver en la pantalla si están en orden crecientes o decrecientes</p>
+                    </div>
+                    <div>
+                        <h3>Ingresa dos números</h3>
+                        <p>&#8595;</p>
+                        <div id="contenedor">
+                            <div class="columnas">
+                                <div>
+                                    <div> 
+                                        <label for="numero1"><strong>Número 1</strong></label>
+                                    </div>
+                                    <input type="number" id="numero1" class="input-predeterminado">
+                                </div> 
+                                <div>
+                                    <div>
+                                        <label for="numero2"><strong>Número 2</strong></label>
+                                    </div>
+                                    <input type="number" id="numero2" class="input-predeterminado">
+                                </div>
+                            </div>
+                            <div id="contenedor-boton">
+                                <button id="boton-comprobar-orden" class="boton-calcular">Comprobar Orden</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mostrar-orden"></div>
+                </div>
+            </li>
+             <!-- Fin Ejercicio 10-->
+          </ul>
+        </div>
+      </section>
+    <script type="module" src="./js/script-carrusel.js" ></script>
+    <script type="module" src="./js/ejercicio1.js" ></script>
+    <script type="module" src="./js/ejercicio2.js" ></script>
+    <script type="module" src="./js/ejercicio3.js" ></script>
+    <script type="module" src="./js/ejercicio4.js" ></script>
+    <script type="module" src="./js/ejercicio5.js" ></script>
+    <script type="module" src="./js/ejercicio6.js" ></script>
+    <script type="module" src="./js/ejercicio7.js" ></script>
+    <script type="module" src="./js/ejercicio8.js" ></script>
+    <script type="module" src="./js/ejercicio9.js" ></script>
+    <script type="module" src="./js/ejercicio10.js"></script>
+</body>
+</html>
